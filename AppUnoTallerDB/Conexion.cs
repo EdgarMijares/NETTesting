@@ -13,14 +13,12 @@ namespace TallerDBAlumnos
         {
             try
             {
-                // Build connection string
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "localhost";   // update me
-                builder.UserID = "SA";              // update me
-                builder.Password = "Hackman1896";      // update me
+                builder.DataSource = "localhost";
+                builder.UserID = "SA";
+                builder.Password = "Hackman1896";
                 builder.InitialCatalog = "master";
 
-                // Connect to SQL
                 Console.Write("Connecting to SQL Server ... ");
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
@@ -35,9 +33,6 @@ namespace TallerDBAlumnos
             {
                 Console.WriteLine(e.ToString());
             }
-
-            Console.WriteLine("All done. Press any key to finish...");
-            Console.ReadKey(true);
         }
     }
 }

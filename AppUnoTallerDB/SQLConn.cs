@@ -1,12 +1,15 @@
-using System;
+﻿using System;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace SqlConec {
-    class SQLConn {
+namespace SQLConn
+{
+    class SQLConn
+    {
         public static SqlConnection connection;
-        public static SqlConnection connectionService() {
+        public static SqlConnection connectionService()
+        {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
             builder.DataSource = "localhost";
             builder.UserID = "SA";
@@ -14,30 +17,36 @@ namespace SqlConec {
             builder.InitialCatalog = "master";
             return new SqlConnection(builder.ConnectionString);
         }
-        public static void OpenConnection() {
+        public static void OpenConnection()
+        {
             connection = connectionService();
             connection.Open();
         }
-        public static void CloseConnection() {
+        public static void CloseConnection()
+        {
             connection.Close();
         }
-        public static void ExecuteQuery(string query) {
+        public static void ExecuteQuery(string query)
+        {
             SqlCommand command = new SqlCommand(query, connection);
             command.ExecuteNonQuery();
         }
-        public static SqlDataReader DataQuery(string query) {
+        public static SqlDataReader DataQuery(string query)
+        {
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader data = command.ExecuteReader();
             return data;
         }
-        public static object ShowDataGrid(string query) {
+        public static object ShowDataGrid(string query)
+        {
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataSet collection = new DataSet();
             adapter.Fill(collection);
             object data = collection.Tables[0];
             return data;
         }
-        public static SqlCommand queryService(string query) {
+        public static SqlCommand queryService(string query)
+        {
             return new SqlCommand(query, connectionService());
         }
     }

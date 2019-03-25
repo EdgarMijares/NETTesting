@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace AppUnoTallerDB
 {
@@ -28,7 +30,28 @@ namespace AppUnoTallerDB
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            Console.WriteLine(nombre_txt.Text);
+            string query_persona = "INSERT INTO Personas VALUES(" + nombre_txt.Text + "," +
+                apellidos_txt.Text + "," +
+                calle_txt.Text + "," +
+                noext_txt.Text + "," +
+                poblacion_txt.Text + "," +
+                pais_txt.Text + "," +
+                fechanac_txt.Text + "," +
+                curp_txt.Text + ")";
+            SQLConn.SQLConn.OpenConnection();
+            SQLConn.SQLConn.ExecuteQuery(query_persona);
+            try
+            {
+                SqlDataReader list = SQLConn.SQLConn.ExecuteQuery("SELECT * FROM Personas");
+                Console.WriteLine(list['id']);
+            } catch (SqlException ex)
+            {
+                Console.WriteLine(ex);
+            }
+            string query_alumno = "INSERT INTO Personas VALUES(" + numcontrol_txt.Text + "," +
+                escuelaprocede_txt.Text + "," +
+                 + ")";
+            SQLConn.SQLConn.ExecuteQuery(query_persona);
         }
     }
 }
