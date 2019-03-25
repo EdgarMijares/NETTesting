@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppUnoTallerDB", "AppUnoTallerDB\AppUnoTallerDB.csproj", "{15864DC7-1E76-4B09-A4FC-0565E3CD5B49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15864DC7-1E76-4B09-A4FC-0565E3CD5B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15864DC7-1E76-4B09-A4FC-0565E3CD5B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15864DC7-1E76-4B09-A4FC-0565E3CD5B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15864DC7-1E76-4B09-A4FC-0565E3CD5B49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C53217DC-3FBD-4B31-99A2-670E0519087A}
+	EndGlobalSection
+EndGlobal

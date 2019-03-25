@@ -1,0 +1,10 @@
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\bin\Debug\AppUnoTallerDB.exe.config
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\bin\Debug\AppUnoTallerDB.exe
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\bin\Debug\AppUnoTallerDB.pdb
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\obj\Debug\AppUnoTallerDB.csprojAssemblyReference.cache
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\obj\Debug\AppUnoTallerDB.Properties.Resources.resources
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\obj\Debug\AppUnoTallerDB.csproj.GenerateResource.cache
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\obj\Debug\AppUnoTallerDB.csproj.CoreCompileInputs.cache
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\obj\Debug\AppUnoTallerDB.exe
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\obj\Debug\AppUnoTallerDB.pdb
+C:\Users\edgci\source\repos\AppUnoTallerDB\AppUnoTallerDB\obj\Debug\AppUnoTallerDB.Form1.resources
